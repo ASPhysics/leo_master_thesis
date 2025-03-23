@@ -1,0 +1,200 @@
+\chapter{Introduction} % Main chapter title
+\label{Chapter1} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	SECTION 1: Coherence and Excitation Transport
+%----------------------------------------------------------------------------------------
+
+\section{Coherence and Excitation Transport}
+
+In this chapter, we aim to explain the phenomena of long coherences (lifetimes) and the excitation transport of light on a microtubule. The proposed model takes the following approach:
+
+\begin{itemize}
+    \item The microtubule is modeled as a cylindrical structure consisting of nodes. Each node represents an atom, which is modeled as a two-level system. The number of atoms, \( N_{\text{atoms}} \), is determined by the number of chains (\( n_{\text{chains}} \)) and the number of rings (\( n_{\text{rings}} \)), assuming fixed positions for these nodes.
+    \item The system is restricted to a single excitation.
+    \item A time-dependent coupling to an electric field is proposed, which may be either classical or quantum in nature. This coupling is intended to facilitate spectroscopy.
+    \item Two types of Lindblad operators are introduced to model dissipation processes. Specifically:
+    \begin{enumerate}
+        \item Spontaneous decay
+        \item Dephasing
+    \end{enumerate}
+\end{itemize}
+The Lindblad operators introduced to model the spontaneous decay and dephasing processes for each individual atom are defined as follows:
+
+\begin{align}
+    C_{\text{decay}}^{(i)} &= \sqrt{\gamma_0} \, \sigma_-^{(i)}, \\
+    C_{\text{dephase}}^{(i)} &= \sqrt{\gamma_\phi} \, \sigma_z^{(i)},
+\end{align}
+
+where:
+\begin{itemize}
+    \item \( C_{\text{decay}}^{(i)} \) describes the spontaneous decay of the \(i\)-th atom, with a rate given by \(\gamma_0\).
+    \item \( C_{\text{dephase}}^{(i)} \) describes the dephasing of the \(i\)-th atom, with a rate given by \(\gamma_\phi\).
+    \item \( \sigma_-^{(i)} \) is the lowering operator for the \(i\)-th atom, and \( \sigma_z^{(i)} \) is the Pauli \( z \)-operator for the \(i\)-th atom.
+\end{itemize}
+
+
+
+\newpage
+
+
+
+
+
+
+
+
+
+
+
+\section{Motivation}
+\noindent
+Quantum computing, an exceptionally promising area of study in modern physics, offers a fundamentally new way to process and transmit information.
+Applications of this, not yet scalable technology range from cryptography to drug research.
+Quantum computers would especially outperform classical computers in quantum simulations of chemical / physical systems \cite{Eddins2022}.
+Qubits, the analog to classical bits, for example,
+photons or atoms play a crucial role in harnessing this quantum technology \cite{Ramakrishnan2023}.
+The area which describes photons and their interaction with matter is quantum optics.
+One essential goal of this filed is to build efficient and controllable interactions between photons and atoms.
+A challenge for this is unwanted (spontaneous) emission, where photons are scattered into channels out of control.
+This spontaneous emission hampers the development of quantum technologies, especially in quantum information processing.
+%Quantum information processing stands at the forefront of modern technological advancement.
+Subradiant states are a promising concept for this field of study.
+These states appear when many emitters interact via light-mediated resonant dipole-dipole interactions
+and inherit lifetimes magnitudes larger than that of a single emitter \cite{AsenjoGarcia2017}.
+Insights into information transport within complex systems are of utmost interest,
+as they could lead to advances in quantum computing. %routing and storage
+Especially with subradiant states, as they also offer ultrafast readout \cite{Scully2015}.
+%Zhen Wang et al. demonstrated, that a switching between sub- and superradiant modes is possible \cite{Wang2020}.
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+%\section{Objective}
+        %\vspace{0.5cm}
+        %\noindent
+        %The goal of this thesis is
+        %to perform robust directional photon routing on atomic systems in free-space using subradiant states.
+        %Focusing on a Y-shaped atomic tree, different topologies are explored to enable long-lived information transport as a proof of concept.
+        %
+        %\section{Outline}
+        %This thesis is structured as follows.
+        %Chapter \ref{Chapter2} introduces the theoretical background.
+        %It covers the concepts of open quantum systems,
+        %subradiance and superradiance, the Green tensor, and the reciprocal space.
+        %These tools are essential foundations for describing atom-atom interactions in free space,
+        %including dipole-dipole interactions and coupling to a photonic bath.
+        %%After this chapter, the reader already knows...
+        %The quantum router of \cite{Startingpoint} is presented and summarized in Chapter \ref{Chapter3}.
+        %It introduces the concepts of graph theory and explains how quantum evolution on a graph topology can be utilized to achieve directional routing of information.
+        %Chapter \ref{Chapter4} will be the core of this thesis, adapting this model to an atomic system.
+        %This chapter delves into the challenges of implementing directional routing in a fully connected atomic system and investigates various solutions to control the phase of interactions.
+        %It further extends the analysis to systems with a larger number of atoms, focusing on coupling control and routing capabilities in different configurations, such as equilateral and isosceles triangles.
+        %Chapter \ref{Chapter5} concludes the thesis by summarizing the results and discussing potential future directions in the field of quantum routing in atomic systems.
+
+
+It is widely assumed that one of the crucial tasks currently facing quantum theorists
+is to understand and characterize the behaviour of realistic quantum systems. In
+any experiment, a quantum system is subject to noise and decoherence due to the
+unavoidable interaction with its surroundings. The theory of open quantum systems
+aims at developing a general framework to analyze the dynamical behaviour of systems
+that, as a result of their coupling with environmental degrees of freedom, will no
+longer evolve unitarily. \cite{Rivas_2010}
+
+
+
+2DES> \cite{krumland2023twodimensional}, \cite{Segarra-Martí2018}, \cite{Sun2024}
+
+
+
+NONlinear Optics> \cite{Hamm2005}, \cite{Mukamel1995}
+
+
+
+
+
+
+
+
+
+
+
+
+Spectroscopy investigates the interaction between matter and electromagnetic radiation, offering a means to analyze composition and structure.
+Central to this analysis is the understanding of how molecules respond to specific frequencies of light, revealing information about their energy levels and bonding.
+Key concepts include wavelength ($\lambda$), wavenumber ($\bar{\nu}$), and frequency ($\nu$).
+Wavelength, the distance between successive wave crests, is typically measured in nanometers or micrometers.
+Wavenumber, expressed in inverse centimeters (cm$^{-1}$), represents the number of waves per unit distance and is directly proportional to energy, defined as $\bar{\nu} = 1/\lambda$ (where $\lambda$ is in cm).
+Frequency, the number of wave cycles per second, is measured in Hertz (Hz), and the angular frequency ($\omega$) is related to frequency by $\omega = 2\pi\nu$.
+The relationship between angular frequency and wavenumber is given by $\omega = 2\pi c \bar{\nu}$, where $c$ is the speed of light.
+
+Then I turned everything into $fs^{-1}$.
+
+
+Spectrometers are instruments designed to measure the intensity of light as a function of wavelength or frequency.
+Different types of spectrometers are employed for various regions of the electromagnetic spectrum.
+Notably, UV-Vis spectrometers analyze absorption and transmission of ultraviolet and visible light, while infrared (IR) spectrometers measure the absorption of infrared light, providing insights into molecular vibrations.
+Nuclear Magnetic Resonance (NMR) spectrometers probe the magnetic properties of atomic nuclei, revealing molecular structure.
+
+
+
+
+\section*{Conversion from Discrete Sum to Continuous Spectral Density}
+
+\noindent In the theory of open quantum systems, one often moves from a discrete description of the bath to a continuous one. This is summarized by the transformation:
+\[
+\sum_{j=1}^{M} g_j^2 \,\delta(\omega - \omega_j)
+\;\;\longrightarrow\;\;
+J(\omega).
+\]
+
+\subsection*{1. Discrete Modes}
+The bath is initially described as a set of $M$ harmonic oscillators:
+\begin{itemize}
+  \item Each oscillator has frequency $\omega_j$.
+  \item Each oscillator couples to the system with coupling constant $g_j$.
+\end{itemize}
+The spectral contribution of each oscillator is:
+\[
+\sum_{j=1}^{M} g_j^2\,\delta(\omega - \omega_j).
+\]
+
+\subsection*{2. Density of States}
+As $M \to \infty$ and the frequencies $\{\omega_j\}$ become dense, replace the sum by an integral:
+\[
+\sum_{j=1}^{M} \quad \longrightarrow \quad \int d\omega'\,\rho(\omega'),
+\]
+where $\rho(\omega')$ is the density of states, indicating how many modes lie near frequency $\omega'$.
+
+\subsection*{3. Frequency-Dependent Coupling}
+In the continuum limit, the coupling $g_j$ becomes a function of frequency, $g(\omega')$. Hence:
+\[
+g_j^2 \;\;\longrightarrow\;\; g(\omega')^2.
+\]
+
+\subsection*{4. Form of $J(\omega)$}
+Putting these together, one obtains
+\[
+\sum_{j=1}^{M} g_j^2\,\delta(\omega - \omega_j)
+\;\;\longrightarrow\;\;
+\int_{0}^{\infty} d\omega'\,\rho(\omega')\,g(\omega')^2\,\delta(\omega - \omega').
+\]
+Using the sifting property of the delta function, this becomes
+\[
+J(\omega) \;=\; \rho(\omega)\,g(\omega)^2.
+\]
+
+\subsection*{5. Ohmic Spectral Density with Exponential Cutoff}
+A commonly used form in open quantum system models is the Ohmic spectral density with an exponential cutoff:
+\[
+J(\omega) \;=\; \alpha \,\omega\, e^{-\omega/\omega_c},
+\]
+where:
+\begin{itemize}
+  \item $\alpha$ is a coupling constant,
+  \item $\omega_c$ is the cutoff frequency.
+\end{itemize}
+``Ohmic'' means $J(\omega) \propto \omega$ for small $\omega$, and the exponential cutoff ensures convergence at large $\omega$.
